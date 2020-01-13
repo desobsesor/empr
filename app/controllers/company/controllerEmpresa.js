@@ -2,11 +2,11 @@ var Empresa = require('../../models/company/empresa');
 
 // validar empresa
 exports.getEmpresas = function (req, res) {
-    Empresa.find({ empresa: req.params.empresa, passwordHash: req.params.password },
+    Empresa.find(
         function (err, empresa) {
             if (err)
                 res.send(err);
-            res.json(empresa); // devuelve todos los registros en base a una busqueda	
+            res.json(empresa); // devuelve todos los registros en base a una busqueda
         }
     );
 };
@@ -16,18 +16,7 @@ exports.getEmpresaPorID = function (req, res) {
         function (err, empresa) {
             if (err)
                 res.send(err);
-            res.json(empresa); // devuelve todos los registros		
-        }
-    );
-};
-
-// Obtiene todos los objetos Empresa de la base de datos
-exports.getEmpresa = function (req, res) {
-    Empresa.find(
-        function (err, empresa) {
-            if (err)
-                res.send(err);
-            res.json(empresa); // devuelve todos los registros		
+            res.json(empresa); // devuelve todos los registros
         }
     );
 };

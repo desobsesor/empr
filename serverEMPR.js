@@ -10,17 +10,9 @@ const mongoose = require('mongoose');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-
 //const engine = require('ejs-locals');
 const cors = require('cors');
-const multer = require('multer');
-const GridFsStorage = require('multer-gridfs-storage');
-const Grid = require('gridfs-stream');
 const methodOverride = require('method-override');
-const crypto = require('crypto');
-const util = require('util');
-var mime = require('mime');
-
 //#endregion
 
 //#region SANITIZER pruebas
@@ -47,7 +39,6 @@ app.use(methodOverride('_method'));
 app.set('view engine', 'html');
 //app.set('views', path.join(__dirname, '/app/views'));
 //#region SANITIZER
-app.use(favicon(path.join(__dirname, '/public', 'images/ico', 'favicon.ico')));
 //parse application/json
 //app.use(bodyParser.json());
 app.use(cors());

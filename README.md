@@ -75,8 +75,6 @@ _Herramientas y Tecnologias utilizadas
 * [Nodejs](https://www.mongodb.com/) - Entorno JavaScript de lado de servidor, utiliza un modelo asíncrono y dirigido por eventos.
 * [MongoDB](https://www.npmjs.com/) - Manejador de dependencias
 * [MongoDB](https://www.mongodb.com/) - Gestor de bases de datos
-* [Angular](https://angular.io/) - Framework de desarrollo para JavaScript
-* [Boostrap](https://getbootstrap.com//) - Conjunto de herramientas de código abierto para HTML, CSS y JS.
 
 ## Contribuyendo 🖇️
 
